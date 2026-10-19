@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const metadata: Metadata = {
   title: "Lite ERP v4",
