@@ -8,8 +8,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es">
-      <body>{children}</body>
+    <html lang="es" suppressHydrationWarning>
+      <body>
+        <div className="h-screen flex flex-col bg-base-100 overflow-hidden">{children}</div>
+      </body>
     </html>
   );
 }
